@@ -195,6 +195,7 @@ static int filter_get_audio( mlt_frame frame, void **buffer, mlt_audio_format *f
 	*format = normalise? mlt_audio_s16 : mlt_audio_f32le;
 	mlt_frame_get_audio( frame, buffer, format, frequency, channels, samples );
 
+
 	mlt_service_lock( MLT_FILTER_SERVICE( filter ) );
 
 	if ( normalise )
